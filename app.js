@@ -3,7 +3,7 @@ const path = require("path")
 const app= express()
 app.use(express.static(path.resolve(__dirname, "./public")));
 
-app.listen('3000', () => {
+app.listen(process.env.PORT || 3001 , () => {
     console.log(
         'Bien ahi genio iniciaste en el servidor',
         'http://localhost:3000'
