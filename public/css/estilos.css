@@ -195,7 +195,7 @@ article{
 }*/
 .footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     max-width:1000px;
