@@ -1,0 +1,306 @@
+
+/*-------------- Generales-------------- */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+p{
+    font-size: 12px;
+}
+
+/* --------------header--------------*/
+.logoYbarra{
+    display: flex;
+    justify-content: space-between;
+}
+.banner{
+    margin-top:  165px;
+    width: 100%;
+}
+header{
+    width: 100%;
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top:0;
+    z-index: 100;
+}
+.logo{
+    width: 30%;
+}
+.serch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.bottom-bar{
+    display: none;
+}
+
+.bottom-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+.burguer{
+   background-color: #03264C;
+   color: white;
+   display: block;
+   max-width: 50px;
+   padding: 15px 0;
+   border-radius: 8px;
+   text-align: center;
+   font-size: 17px;
+   margin: auto;
+}
+/*-------------- Main --------------*/
+.main{ 
+    width: 90%;
+    margin: auto;
+  
+}
+.contenedor-form{
+    margin: 100px 0 200px 0 ;
+}
+.formulario{
+   max-width: 500px;
+   padding: 20px 15px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin: auto;
+}
+.control-formulario{
+    margin-bottom: 15px;
+  
+}
+.control{
+    width: 100%;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+.botton-form{
+    background-color: #39b54a;
+    color: #FFF;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.botton-form:hover{
+    background-color: #0022AA;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.section-articles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 0;
+
+}
+main section article img{
+    width: 280px;
+}
+.section-title{
+    margin: 10px;
+    color: #666;;
+    font-size: 24px;
+}
+main section article div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+    }
+article{
+    margin: 10px;
+    background-color: white;
+    height: fit-content;
+  
+}
+.precio{
+    display: flex;
+    font-size: 18px;
+    flex-grow: 3;
+}
+.descuento{
+    display: flex;
+    font-size: 16px;
+    flex-grow: 7;
+    color: green;
+}
+
+.desc-articulos{
+    display: flex;
+    position: relative;
+   
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+}
+.nombre-articulo{
+    display: none;
+    font-size: 16px;
+    color: grey;
+    padding: 10px 15px;
+}
+.camioncito{
+    transform: rotate(0.5deg);
+    transition: all 0.5s;
+}
+.camioncito:hover{
+    transform: rotate(-90deg);
+}
+/*-------------- Footer --------------*/
+/*footer section{
+    text-align: center;
+}*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width:1000px;
+    margin: auto;
+    
+}
+.footer section{
+   max-width: 300px;
+    
+}
+.icono-footer{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+.icono-footer:hover{
+    color: #EAC926;
+}
+
+
+/*-------------- media --------------*/
+/* mobile */
+@media  (max-width: 360px) {
+  
+    .logo{
+        flex-grow: 5;
+    }
+    .serch{
+        flex-grow: 5;
+    }
+   
+}
+
+/* TABLETS */
+@media  (min-width: 361px) {
+ 
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition: all 0.5s;
+    } 
+
+    article:hover .nombre-articulo{
+        display: block;
+    }
+}
+
+/* DESKTOP */
+@media  (min-width: 768px) {
+
+
+    .top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burguer{
+        display: none;
+    }
+    .bottom-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bottom-bar ul{
+        display: flex;
+    }
+
+    .bottom-bar li{
+       margin: 0 5px;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
+}
+
+@media  (min-width: 1200px) {
+    .logo{
+        width: 250px;
+    }
+    .top-bar, .bottom-bar{
+         max-width: 1200px;
+        margin: auto;
+    }
+    .top-bar{
+        align-items: center;    
+    }
+    .bottom-bar li{
+        margin: 0 10px;
+    }
+    .bottom-bar a{
+       font-size: 19px;
+       margin-top: 50px ;
+    }
+    .copy-header{
+        margin: 0;
+        max-width:none;
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+    
+}
+
+
+
